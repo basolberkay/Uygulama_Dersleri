@@ -22,7 +22,7 @@ public class quest066 {
 			System.out.println("Telefon kodunu yanlis girdiniz.");
 		}
 		else if (ec != girisec) {
-			System.out.println("mail kodunu yanlis girdiniz.");
+			System.out.println("mail kodunu yanlis girdiniz. asdas");
 		}
 		
 		
