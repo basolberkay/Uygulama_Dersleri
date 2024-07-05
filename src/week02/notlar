@@ -1,0 +1,108 @@
+index:
+bir koleksiyonun veya dizinin belirli bir eleman?na eri?mek için kullan?lan konum veya numaraland?rma sistemini ifade eder.
+Java'da, bir dizi veya bir koleksiyon içindeki her eleman bir indeks numaras? ile belirlenir. Bu indeks numaralar? genellikle
+ s?f?rdan ba?lar.
+Örne?in: Java karakter dizisinin ilk karakterine ('J') ve ikinci karakterine ('a') indeks numaralar?yla eri?ilmi?tir.
+?lk karakterin indeksi 0'd?r, ikinci karakterin indeksi 1'dir ve bu ?ekilde devam eder.
+
+
+length(): bir dizenin uzunlu?unu döndürür. Yani, dize içindeki karakterlerin say?s?n? verir.
+charAt(int index): Bu metod, belirtilen dizindeki karakteri döndürür. Dizindeki karakterlerin indeksleri 0'dan ba?lar.
+Yani, "Merhaba" dizesindeki 0. indeks 'M' harfini, 1. indeks 'e' harfini temsil eder.
+
+
+indexOf: bir dize içinde belirli bir alt dizenin ba?lang?ç dizinini bulmak için kullan?l?r.
+
+
+toUpperCase ve toLowerCase: Dizenin tüm karakterlerini büyük veya küçük harfe dönü?türür. Bu, dize içindeki
+karakterlerin durumunu de?i?tirmek için kullan?l?r.
+
+trim: bir dizenin ba??ndaki ve sonundaki bo?luklar? kald?ran bir String s?n?f? metodu olarak kullan?l?r.
+Yani, bir dizenin içindeki gereksiz bo?luklar? temizler.
+
+break: program? sonland?r?r.
+
+equals: bir nesnenin ba?ka bir nesne ile e?it olup olmad???n? kontrol etmek için kullan?lan bir Java metodudur. E?er nesneler ayn? türde ise ve belirli bir e?itlik kriterini kar??l?yorsa true, kar??lam?yorsa false döner.**
+
+if, else if , else: ko?ul ifadeleridir örne?in:
+int sayi = 10;
+
+if (sayi > 0) {
+    System.out.println("Say? pozitif.");
+} else if (sayi < 0) {
+    System.out.println("Say? negatif.");
+} else {
+    System.out.println("Say? s?f?r.");
+}
+
+
+Switch case: programlamada bir de?i?kenin veya ifadenin farkl? de?erlerine göre farkl? i?lemler yapmak için kullan?lan bir kontrol yap?s?d?r.
+örne?in:
+
+int gun = 3;
+String gunAdi;
+
+switch (gun) {
+    case 1:
+        gunAdi = "Pazartesi";
+        break;
+    case 2:
+        gunAdi = "Sal?";
+        break;
+    case 3:
+        gunAdi = "Çar?amba";
+        break;
+    case 4:
+        gunAdi = "Per?embe";
+        break;
+    case 5:
+        gunAdi = "Cuma";
+        break;
+    case 6:
+        gunAdi = "Cumartesi";
+        break;
+    case 7:
+        gunAdi = "Pazar";
+        break;
+    default:
+        gunAdi = "Geçersiz gün";
+        break;
+}
+
+System.out.println("Bugün günlerden " + gunAdi);
+
+Döngüler:
+while: kendisinden sonra gelen mant?ksal ifade do?ru oldu?u müddetçe sonraki statement blo?unun çal??mas?n? sa?lar
+örne?in:
+package barisHoca;
+
+import java.util.Scanner;
+
+public class practices {
+	public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+			int sayi;
+			int toplam = 0;
+		System.out.println("bir sayi giriniz");
+			while((sayi = scanner.nextInt()) != 0){
+				toplam +=sayi;
+			}
+		System.out.println(toplam);
+	}
+}
+do while: döngü gövdesi en az bir kez çal??t?r?l?r, ard?ndan ko?ul kontrol edilir.
+E?er ko?ul yanl?? ise, döngü gövdesi bir kez çal??t?r?ld?ktan sonra durur. örne?in:
+class Demo {
+    public static void main(String[ ] args) {
+        int x = 1;
+        do {
+            System.out.println(x);
+            x++;
+        } while(x < 5);
+    }
+}
+for: Bir ba?lang?ç de?eri belirlenir, bir ko?ul sa?land??? sürece döngü çal??maya devam eder
+ve her döngü ad?m?nda belirli bir i?lem veya i?lemler gerçekle?tirilir. örne?in:
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
